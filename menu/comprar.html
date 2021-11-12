@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar</title>
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header>
+    <div id="areaTotal">
+      <div id="header">
+    <img src="/assets/logo.png"/>
+      <div class="menu-busca">
+                      <form name="buscaForm" method="get" id="form-auto-complete" data-search="suggestion" >
+                          <input type="hidden" name="loja"  />
+                          
+                          <label for="busca">
+                              <input name="palavra_busca" id="busca-palavra" placeholder="Digite o que você procura..." data-input="suggestion" tabindex="0" type="text"/>
+                          </label>
+                          <button class="busca-botao">BUSCAR</button>
+                      </form>
+      </div>
+
+      <div class="menu" id="menu">
+					<ul>
+            <li class="home">
+							<a href="/index/home.html">Home</a>
+					   	</li>
+						<li class="console">
+							<a href="/menu/console.html">Consoles</a>
+						</li>
+
+						<li class="acessorios">
+							<a href="/menu/acessorios.html">Acessorios</a>
+						</li>
+
+						<li class="jogos">
+							<a href="/menu/jogos.html">Jogos</a>
+						</li>
+
+						<li class="contato"> 
+							<a href="/menu/contato.html">Contato</a>
+						</li>
+
+						<li class="Comprar">
+							<a href="/menu/comprar.html">Comprar</a>
+						</li>
+					</ul>
+
+
+				</div>
+  </header>
+  <main>
+
+    <!-- Itens a venda -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="item">
+             <!-- Consoles -->
+             <img class="acessorio" src="/assets/uncharted4.png"/>
+             <p><h3>Ps4 do uncharted 4</h3>
+             <button  onclick="select1()"> Comprar</button></h2></p>
+              <h2 id="preco1">R$ 2600,00</h2>
+          </div>
+          <div class="item">
+            <img class="acessorio" src="/assets/ps4Kill.png" />
+                <p><h3>Ps4 do killzone</h3> 
+				        <h2><button class="btn" onclick="select2()"> Comprar</button></h2></p>
+                <h2 id="preco2">R$ 3100,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="https://www.racergames.com.br/img/p/3/6/4/364-thickbox_default.jpg" />
+              <p><h3>Ps4 do Destiny</h3> 
+              <h2><button class="btn" onclick="select3()"> Comprar</button></h2></p>
+              <h2 id="preco3">R$ 2700,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/un.png" />
+              <p><h3>Ps4 do CallOfDuty B03</h3> 
+              <h2><button class="btn" onclick="select4()"> Comprar</button></h2></p>
+              <h2 id="preco4">R$ 2600.00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/ps4_console_gloss_black.png" />
+              <p><h3>PS4 Regular</h3> 
+              <h2><button class="btn" onclick="select5()"> Comprar</button></h2></p>
+              <h2 id="preco5">R$ 2500,00</h2>
+         </div>
+         <!-- Acessorios -->
+         <div class="item">
+          <img class="acessorio" src="/assets/ps4-accessories-wireless-stereo-headset-two-column-ps4-eu-10oct14.png" />
+              <p><h3>Headset Sony</h3> 
+                <h2><button class="btn" onclick="select6()"> Comprar</button></h2></p>
+              <h2  id="preco6">R$ 560,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/81730-forside-150x150.png" />
+              <p><h3>Playstastion Camera</h3> 
+                <h2><button class="btn" onclick="select7()"> Comprar</button></h2></p>
+              <h2 id="preco7">R$ 250,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/11067_1_20160201003054.png" />
+              <p><h3>Headphone Sony</h3> 
+                <h2><button class="btn" onclick="select8()"> Comprar</button></h2></p>
+              <h2 id="preco8">R$ 560,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/camuflado.png" />
+              <p><h3>Controle Camuflado</h3> 
+                <h2><button class="btn" onclick="select9()"> Comprar</button></h2></p>
+              <h2 id="preco9">R$ 420,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/PSN_varias-180x180.png" />
+              <p><h3>Gift Card $50 Dollar</h3> 
+                <h2><button class="btn" onclick="select10()"> Comprar</button></h2></p>
+              <h2 id="preco10">R$ 100,00</h2>
+         </div>
+         <!-- Jogos -->
+         <div class="item">
+          <img class="acessorio" src="/assets/call-of-duty-modern-warfare-2.jpg" />
+              <p><h3>Call of Duty MW2</h3> 
+                <h2><button class="btn" onclick="select11()"> Comprar</button></h2></p>
+              <h2 id="preco11">RS 900</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/no-primeiro-jogo-da-parceria-do-ufc-com-a-ea-sports-jon-jones-e-alexander-gustafsson-foram-as-estrelas-da-capa-1447690592296_618x771.jpg" />
+              <p><h3>UFC EA PS4</h3> 
+                <h2><button class="btn" onclick="select12()"> Comprar</button></h2></p>
+              <h2 id="preco12">R$ 35,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/content_pi.jpg" />
+              <p><h3>The Crew PS4</h3> 
+                <h2><button class="btn" onclick="select13()"> Comprar</button></h2></p>
+              <h2 id="preco13">R$ 26,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/GoW3_Remastered-1.png" />
+              <p><h3>God of War3 Ps4</h3> 
+                <h2><button class="btn" onclick="select14()"> Comprar</button></h2></p>
+              <h2 id="preco14">R$ 45,00</h2>
+         </div>
+         <div class="item">
+          <img class="acessorio" src="/assets/Battlefield-1.jpg" />
+              <p><h3>Battlefield 1 PC</h3> 
+                <h2><button class="btn" onclick="select15()"> Comprar</button></h2></p>
+              <h2 id="preco15">R$ 60,00</h2>
+         </div>
+          <div class="item">
+            <h1> Carrinho: </h1>
+            <ul id="checkout">
+             
+
+            </ul>
+        </div>
+      </div>
+
+    </div>
+    
+  
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="/script/script.js"></script>
+</body>
+</html>
