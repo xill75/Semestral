@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  background-position: center;
+  font-family: 'roboto', sans-serif;
+}
+
+.form {
+  width: 400px;
+  height: auto;
+  color: black;
+  font-family: 'roboto', sans-serif;
+}
+
+.heading {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+input,
+.submit {
+  width: 80%;
+  height: 35px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: black;
+  padding: 15px;
+  transition: 0.5;
+  text-transform: capitalize;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input:focus,
+.submit:hover {
+  background: rgba(79, 116, 151, 0.3);
+  color: black;
+}
+
+.submit {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+  margin: 50px, auto, 0;
+}
+
+.link {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 30px auto;
+}
+
+.link:hover {
+  color: rgb(51, 88, 129);
+}
+
+.div-alert {
+  position: absolute;
+  top: -100%;
+  left: 46%;
+  transform: translateY(-50%);
+  min-width: 150px;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+  background: rgb(156, 82, 82);
+  border-top: 10px solid rgb(207, 48, 48);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: black;
+  font-family: 'roboto', sans-serif;
+  text-align: center;
+  transition: 1s;
+}
+
